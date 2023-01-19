@@ -1,0 +1,193 @@
+.catsFoodItem {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  padding: 4px;
+  border-radius: 12px;
+  background:linear-gradient(135deg, transparent 30px, #1698D9 0);
+
+  .contentCatsFood {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0 50px;
+    padding-top: 20px;
+    background:linear-gradient(135deg, transparent 29px, #FFFFFF 0);
+    border-radius: 12px;
+    height: 100%;
+
+    .miniTitle {
+      margin: 0;
+      font-weight: 400;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 5px;
+      z-index: 100;
+    }
+
+    .miniTitleHover {
+      display: block;
+      font-weight: 400;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      margin: 0;
+      margin-bottom: 5px;
+      color: #D91667;
+      z-index: 100;
+    }
+
+    .titleFood {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0;
+      margin-bottom: 3px;
+      z-index: 100;
+    }
+
+    .clarify {
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 15px;
+      z-index: 100;
+    }
+
+    .bonus {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      margin: 0;
+      width: 140px;
+      color: #666666;
+      z-index: 100;
+    }
+
+    .numberServing {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      margin: 0;
+      width: 100px;
+      color: #666666;
+      z-index: 100;
+    }
+
+    .weight {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 10px;
+      z-index: 10;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: #1698D9;
+      position: absolute;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 22px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      padding-top: 20px;
+      bottom: 20px;
+      right: 20px;
+
+      >span {
+        font-size: 21px;
+        line-height: 22px;
+      }
+    }
+
+    .img {
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+    }
+  }
+
+  .slogan {
+    color: #FFFFFF;
+    margin: 0;
+    width: 314px;
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+
+    >span {
+      position: relative;
+      display: inline-block;
+      color: #1698D9;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        width: 28px;
+        height: 2px;
+        border-bottom: 1px dashed #1698D9;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.selectedFood {
+  background:linear-gradient(135deg, transparent 30px, #D91667 0);
+
+  .contentCatsFood {
+
+
+    .weight {
+      background-color: #D91667;
+    }
+  }
+}
+
+.disabled {
+  background:linear-gradient(135deg, transparent 30px, #B3B3B3 0);
+
+  .contentCatsFood {
+    background:linear-gradient(135deg, transparent 29px, #F2F2F2 0);
+    cursor: default;
+
+    .miniTitle { 
+      opacity: 0.5;
+    }
+
+    .titleFood {
+      opacity: 0.5;
+    }
+
+    .clarify {
+      opacity: 0.5;
+    }
+
+    .bonus {
+      opacity: 0.5;
+    }
+
+    .numberServing {
+      opacity: 0.5;
+    }
+
+    .img {
+      opacity: 0.5;
+    }
+
+    .weight {
+      background-color: #B3B3B3;
+    }
+  }
+
+  .slogan {
+    color: #FFFF66;
+  }
+}

@@ -1,0 +1,14 @@
+.catsFoodList {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  column-gap: 80px;
+  row-gap: 80px;
+  flex-wrap: wrap;
+
+  @media(max-width: 1300px) {
+    column-gap: 40px;
+  }
+}
